@@ -22,7 +22,7 @@ button{
   width: 100px;
   height: 40px;
 }
-.model
+.model-1
 {
   display: none;
   width: :100%;
@@ -41,6 +41,23 @@ button{
 
 }
 .model-3
+{
+  display: none;
+  width: :100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+
+}
+.model-4
+{
+  display: none;
+  width: :100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+}
+.model-5
 {
   display: none;
   width: :100%;

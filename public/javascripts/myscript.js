@@ -1,16 +1,14 @@
 $(document).ready(function(){
-  if (true) {
+
     $(".Mmodel-1").click(function(){
-      $(".model").fadeIn();
+      $(".model-1").fadeIn();
 
-    });
-  }
-
+  });
 });
 
 $(document).ready(function(){
   $(".closer").click(function(){
-    $(".model").fadeOut();
+    $(".model-1").fadeOut();
 
   });
 });
@@ -44,6 +42,37 @@ $(document).ready(function(){
 
   });
 });
+
+////
+$(document).ready(function(){
+
+    $(".Mmodel-4").click(function(){
+      $(".model-4").fadeIn();
+
+    });
+});
+$(document).ready(function(){
+  $(".closer").click(function(){
+    $(".model-4").fadeOut();
+
+  });
+});
+
+//////
+$(document).ready(function(){
+
+    $(".Mmodel-5").click(function(){
+      $(".model-5").fadeIn();
+
+    });
+});
+$(document).ready(function(){
+  $(".closer").click(function(){
+    $(".model-5").fadeOut();
+
+  });
+});
+
 
 //*** script photo////
 var slideIndex = 0;
