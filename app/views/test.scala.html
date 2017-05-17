@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="assets/javascripts/jquery-1.9.1.js"> </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".call_model").click(function(){
+          $(".model").fadeIn();
+
+        });
+      });
+      $(document).ready(function(){
+        $(".closer").click(function(){
+          $(".model").fadeOut();
+
+        });
+      });
+
+    </script>
+  </head>
+  <style media="screen">
+    <body>
+    {
+      margin: 0;
+    }
+    button{
+      padding: 20px;
+      margin: 6%;
+      border-radius: 5px;
+      background: #3399cc;
+      color: #fff;
+      font-size: 26px;
+      border: none;
+      curser:pointer;
+    }
+    .model
+    {
+      display: none;
+      width: :100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+    }
+      .model_bg
+      {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        position: fixed;;
+        top: 0;
+      }
+      .model_main
+      {
+        position: fixed;
+        width: 50%;
+        height: 400px;
+        background: #fff;
+        border-radius: 6px;
+        top: 10%;
+        left: 24%;
+        z-index: 1;
+      }
+      .closer
+      {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width:20px;
+        height:20px;
+        cursor: pointer;
+      }
+
+
+  </style>
+
+  <body>
+    <img  src="assets/images/wonder.jpg" width="200" height="200">
+    <button type="button" name="button" class="call_model">show</button>
+    <div class="model">
+      <div class="model_bg">
+        <div class="model_main">
+          <p><strong>ชื่อเรื่อง :</strong> <br>
+          <strong>โรงภาพยนตร์ที่เข้าฉาย :</strong> <br>
+          <strong>รอบ :</strong> <br>
+          <strong>เรื่องย่อ :</strong> <br>
+          </p>
+          <img  src="assets/images/mobile-close.png"  class="closer close" >
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
