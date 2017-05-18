@@ -24,10 +24,11 @@ public class HomeController extends Controller {
       return ok(homepage.render());
     }
 
-    public Result test() {
-      return ok(test.render());
+    public Result menu() {
+      return ok(menu.render());
     }
-
-
+    public Result calculate() {
+      return ok(calculate.render());
+    }
 
 }

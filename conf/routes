@@ -3,11 +3,13 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.homepage
-GET     /test                       controllers.HomeController.test
+GET     /                          controllers.HomeController.homepage
+GET     /home                           controllers.HomeController.homepage
+GET     /menu                          controllers.HomeController.menu
+GET     /calculate                       controllers.HomeController.calculate
 #Authenticated
 
-#POST    /login                      controllers.Application.authenticate
+#POST    /person                     controllers.Application.addPerson
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
