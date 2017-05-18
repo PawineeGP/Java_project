@@ -6,7 +6,8 @@
 GET     /                          controllers.HomeController.homepage
 GET     /home                           controllers.HomeController.homepage
 GET     /menu                          controllers.HomeController.menu
-GET     /calculate                       controllers.HomeController.calculate
+GET     /BMI                      controllers.HomeController.BMI
+GET     /BMR                      controllers.HomeController.BMR
 #Authenticated
 
 #POST    /person                     controllers.Application.addPerson

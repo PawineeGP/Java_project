@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>BMI</title>
 <meta charset="utf-8">
 <meta name = "format-detection" content = "telephone=no" />
 <link rel="icon" href="assets/images/favicon.ico">
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
-<link rel="stylesheet" href="assets/css/stuck.css">
+<link rel="stylesheet" href="assets/assets/css/stuck.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/touchTouch.css">
 <script src="assets/js/jquery.js"></script>
@@ -32,17 +32,17 @@
 <!--[if lt IE 9]>
  <div style=' clear: both; text-align:center; position: relative;'>
    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+     <img src="http://storage.ie6countdown.com/assets/100/assets/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
    </a>
 </div>
-<script src="js/html5shiv.js"></script>
-<link rel="stylesheet" media="screen" href="css/ie.css">
+<script src="assets/js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="assets/css/ie.css">
 
 
 <![endif]-->
 </head>
 
-<body class="page1" id="top">
+<body>
 <!--==============================
               header
 =================================-->
@@ -59,13 +59,14 @@
             <img src="assets/images/logo.png" alt="Logo alt">
           </a>
         </h1>
-          <div class="navigation">
+          <div class="navigation ">
             <nav>
               <ul class="sf-menu">
-               <li class="current"><a href="@routes.HomeController.homepage">HOME</a></li>
-               <li><a href="@routes.HomeController.menu">MENU</a></li>
+               <li><a href="@routes.HomeController.homepage">HOME</a></li>
+               <li class="current"><a href="@routes.HomeController.menu">MENU</a></li>
                <li class="current"><a href="@routes.HomeController.BMI">BMI</a></li>
-               <li class="current"><a href="@routes.HomeController.BMR">BMR</a></li>
+              <li class="current"><a href="@routes.HomeController.BMR">BMR</a></li>
+
              </ul>
             </nav>
             <div class="clear"></div>
@@ -79,51 +80,12 @@
 <!--=====================
           Content
 ======================-->
-
-<section class="content"><div class="ic">More Website Templates </div>
+<section class="content gallery pad1"><div class="ic">More Website Templates TemplateMonster.com - July 30, 2014!</div>
   <div class="container">
     <div class="row">
-      <div class="grid_4">
-        <div class="banner">
-		  <div class="gall_block">
-        <a href="@routes.HomeController.menu"> <img src="assets/images/menu.jpg" alt=""></a>
-          <div class="bann_capt ">
-            <div class="maxheight">
-              <a href="@routes.HomeController.menu"><img src="assets/images/icon1.png" alt=""></a>
-              <div class="bann_title"> Enjoy Eating  </div>
+      <div class="grid_12">
+        BMI
 
-            </div>
-          </div>
-        </div>
-	   </div>
-      </div>
-      <div class="grid_4">
-        <div class="banner">
-		  <div class="gall_block">
-          <div class="bann_capt  bn__1">
-            <div class="maxheight">
-              <a href="@routes.HomeController.BMI"><img src="assets/images/icon2.png" alt="" ></a>
-              <div class="bann_title">Enter to BMI <br> &amp; Calculate</div>
-
-            </div>
-          </div>
-          <a href="@routes.HomeController.BMI"><img src="assets/images/bmi.png" alt=""></a>
-        </div>
-		</div>
-      </div>
-      <div class="grid_4">
-        <div class="banner ">
-		  <div class="gall_block">
-          <a href="@routes.HomeController.BMR"><img src="assets/images/bmr.jpg" alt=""></a>
-          <div class="bann_capt  bn__2">
-            <div class="maxheight">
-              <a href="@routes.HomeController.BMR"><img src="assets/images/icon3.png" alt=""></a>
-              <div class="bann_title">Enter to BMR <br> &amp; Calculate</div>
-
-            </div>
-          </div>
-		  </div>
-        </div>
       </div>
     </div>
   </div>

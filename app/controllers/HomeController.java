@@ -27,8 +27,14 @@ public class HomeController extends Controller {
     public Result menu() {
       return ok(menu.render());
     }
-    public Result calculate() {
-      return ok(calculate.render());
+    public Result BMI() {
+      return ok(BMI.render());
+
     }
+    public Result BMR() {
+      return ok(BMR.render());
+
+    }
+
 
 }
