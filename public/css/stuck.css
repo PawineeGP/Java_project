@@ -30,9 +30,9 @@
 @media only screen and (max-width: 979px) {
 
 	#stuck_container {
-		position: relative !important;
+		position:fixed !important;
 		box-shadow: none;
-		
+
 	}
 	.pseudoStickyBlock {
 		height: 0 !important;
@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 767px) {
 
-	.isStuck {    
+	.isStuck {
 
 }
 }

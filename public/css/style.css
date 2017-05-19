@@ -31,6 +31,12 @@ body {
     font: 300 14px/20px 'Open Sans', sans-serif;
 }
 
+#logo{
+  
+  width: 100px;
+  position: fixed;
+}
+
 .ic {
 	border:0;
 	float:right;
@@ -57,12 +63,28 @@ p {
 }
 
 input, textarea {
-    border-radius: 0 !important;
+    border-radius: 5 !important;
     outline: none !important;
     -webkit-appearance: none;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    box-shadow: 0 0 5px #DDD inset;
+    color: #666;
+    outline: none;
+    height:25px;
+    width: 275px;
 
 }
-
+.intable{
+  font-size: 25px;
+  line-height: 40px;
+  padding-top: 30px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  color: #535151;
+  font-family: 'Economica', sans-serif;
+}
 
 img {
     max-width: 100%;
@@ -84,6 +106,12 @@ h2 {
     line-height: 48px;
     padding-top: 38px;
     margin-bottom: 14px;
+}
+h3{
+  font-size: 25px;
+  line-height: 40px;
+  padding-top: 30px;
+  margin-bottom: 14px;
 }
 
 .page1 h2 {
@@ -165,8 +193,9 @@ a:hover {
     border: 1px solid #969696;
     color: #969696;
     margin-top: 24px;
-    padding: 5px 32px 11px;
+    padding: 5px 5px 11px;
     font: bold 20px/20px 'Economica', sans-serif;
+    height: inherit;
 }
 
 .btn:hover {
@@ -285,11 +314,11 @@ a:hover {
 /*header*/
 
 header {
-    display: block;
-    position: relative;
+    display:block;
+    position: relative;;
     z-index: 800;
-    padding-top: 28px;
     background-color: #f1f0f1;
+    height: 100px;
 }
 
 header h1 {
@@ -304,7 +333,7 @@ header h1 a {
     display: inline-block;
     overflow: hidden;
     font-size: 0;
-    line-height: 0;    
+    line-height: 0;
     text-indent: -999px;
     transition: 0s ease;
     -o-transition: 0s ease;
@@ -396,6 +425,7 @@ header h1 a img {
 
 .box .btn {
     margin-top: 30px;
+    border-radius: 5px;
 }
 
 .box h2 {
@@ -671,7 +701,7 @@ header h1 a img {
 }
 
 .map_block+.map_block {
-   padding-top: 24px; 
+   padding-top: 24px;
 }
 
 .map_block  .map_title {
@@ -776,7 +806,7 @@ header h1 a img {
     border: none;
     text-indent: -999px;
     z-index: 20;
-    background: url(../images/totop.png) no-repeat left 0; 
+    background: url(../images/totop.png) no-repeat left 0;
     transition: 0s ease;
     -o-transition: 0s ease;
     -webkit-transition: 0s ease;
@@ -817,7 +847,7 @@ header h1 a img {
 
     .clear.height1 {
         height: 10px !important;
-    } 
+    }
 }
 @media only screen and (max-width: 979px) {
 
@@ -846,11 +876,11 @@ header h1 a img {
         margin-left: 0;
         margin-top: 30px;
     }
-    
-     .map figure,  
-     .map figure iframe,  
+
+     .map figure,
+     .map figure iframe,
      #form input,
-     #form textarea,  
+     #form textarea,
      #form .success {
         width: 100% !important;
         float: none !important;
@@ -881,7 +911,7 @@ header h1 a img {
 }
 
 @media only screen and (max-width: 767px) {
-  
+
     .banner>img {
         width: 100%;
     }
@@ -963,14 +993,14 @@ header h1 a img {
 
 
 @media only screen and (max-width: 479px) {
-    
+
 
     .tmSelect.auto, .tmSelect2.auto {
         width: 180px;
-    } 
+    }
 
     .blog table {
-    } 
+    }
 
     .blog table td:first-child  .fa {
         display: block;

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="assets/assets/css/stuck.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/touchTouch.css">
+<link rel="stylesheet" href="assets/css/form.css">
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/jquery-migrate-1.1.1.js"></script>
 <script src="assets/js/script.js"></script>
@@ -84,7 +85,34 @@
   <div class="container">
     <div class="row">
       <div class="grid_12">
-        BMI
+        <form name="bmiForm" id="form input">
+            <center>
+              <table>
+                <tr>
+                  <td width=150px><span class="intable">Your Weight(kg)</td>
+                  <td><input class="textbox" id="weight" type="text" name="weight" size="10"></h3></td>
+                <tr>
+                  <td><span class="intable">Your Height(cm)</td>
+                  <td><input class="textbox" id="height" type="text" name="height" size="10"></td>
+                
+                </tr>
+                <tr>
+                  <td colspan="2"><center><input class="btn" type="button" value="Calculate" onClick="calculate()"></td>
+                <tr>
+                  <td><span class="intable">&nbsp;</td>
+                  <td></td>
+                <tr>
+                  <td><span class="intable">Your BMI</td>
+                  <td><input class="textbox" type="text" name="bmi" size="10"></td>
+                <tr>
+                  <td><span class="intable">This Means</td>
+                  <td><input class="textbox" type="text" name="meaning" size="25"></td>
+                </tr>
+              </table>
+            </center>
+
+
+            </form>
 
       </div>
     </div>
@@ -108,5 +136,50 @@
     </div>
   </div>
 </footer>
+
+<script language="JavaScript">
+        <!--
+        function calculate() {
+            var weight = document.bmiForm.weight.value
+            var height = document.bmiForm.height.value
+                if(weight > 0 && height > 0){
+                  var finalBmi = weight/(height/100*height/100)
+                  document.bmiForm.bmi.value = finalBmi
+                if(finalBmi < 18.5){
+                  document.bmiForm.meaning.value = "That you are too thin."
+                }if(finalBmi > 18.5 && finalBmi < 25){
+            document.bmiForm.meaning.value = "That you are healthy."
+            }
+            if(finalBmi > 25){
+            document.bmiForm.meaning.value = "That you have overweight."
+            }
+            }
+            else{
+            alert("Please Fill in everything correctly")
+            }
+
+        	 var age = document.bmiForm.age.value;
+           var activity = document.bmiForm.activity.value;
+        	 var sex = document.bmiForm.sex.value;
+
+        	 var intage = parseInt(age);
+           var intactivity = parseFloat(activity);
+
+
+             if(sex==0){
+        	   	  var BMR = 66+(13.7*weight)+(5*height)-(6.8*intage);
+                var ans = (intactivity*BMR);
+                var cell = Math.ceil(ans);
+                document.bmiForm.bmr.value = cell;
+        	   }else if(sex==1){
+                var BMR = 665+(9.6*weight)+(1.8*height)-(4.7*intage);
+                var ans = (intactivity*BMR);
+                var cell = Math.ceil(ans);
+                document.bmiForm.bmr.value = cell;
+        	   }
+
+
+        }
+        </script>
 </body>
 </html>
