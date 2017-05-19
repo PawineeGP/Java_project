@@ -51,32 +51,34 @@
 <!--==============================
             Stuck menu
 =================================-->
-  <section id="stuck_container">
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-        <h1>
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="Logo alt">
-          </a>
-        </h1>
-          <div class="navigation ">
-            <nav>
-              <ul class="sf-menu">
-               <li><a href="@routes.HomeController.homepage">HOME</a></li>
-               <li><a href="@routes.HomeController.menu">MENU</a></li>
-               <li class="current"><a href="@routes.HomeController.BMI">BMI</a></li>
-              <li ><a href="@routes.HomeController.BMR">BMR</a></li>
+<section id="stuck_container">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+      <h1>
+        <a href="@routes.HomeController.homepage">
 
-             </ul>
-            </nav>
-            <div class="clear"></div>
-          </div>
+            <img src="assets/images/bmi.png" width="120" height="100" alt="Logo alt">
+        </a>
+      </h1>
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li><a href="@routes.HomeController.homepage">HOME</a></li>
+             <li><a href="@routes.HomeController.menu">MENU</a></li>
+             <li  class="current"><a href="@routes.HomeController.BMI">BMI</a></li>
+             <li ><a href="@routes.HomeController.BMR">BMR</a></li>
+
+           </ul>
+          </nav>
+          <div class="clear"></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </header>
+
 
 <!--=====================
           Content
@@ -84,17 +86,20 @@
 <section class="content gallery pad1"><div class="ic">More Website Templates TemplateMonster.com - July 30, 2014!</div>
   <div class="container">
     <div class="row">
-      <div class="grid_12">
-        <form name="bmiForm" id="form input">
+      <div class="grid_6">
+          <img src="assets/images/bmical.jpg" alt="Logo alt">
+      </div>
+      <div class="grid_6">
+        <form class="fbt" name="bmiForm" id="form input" >
             <center>
               <table>
                 <tr>
                   <td width=150px><span class="intable">Your Weight(kg)</td>
-                  <td><input class="textbox" id="weight" type="text" name="weight" size="10"></h3></td>
+                  <td><input class="textbox" id="weight" type="text" name="weight" size="7"></h3></td>
                 <tr>
                   <td><span class="intable">Your Height(cm)</td>
-                  <td><input class="textbox" id="height" type="text" name="height" size="10"></td>
-                
+                  <td><input class="textbox" id="height" type="text" name="height" size="7"></td>
+
                 </tr>
                 <tr>
                   <td colspan="2"><center><input class="btn" type="button" value="Calculate" onClick="calculate()"></td>
@@ -110,12 +115,9 @@
                 </tr>
               </table>
             </center>
-
-
             </form>
+          </div>
 
-      </div>
-    </div>
   </div>
 </section>
 <!--==============================
@@ -152,6 +154,7 @@
             }
             if(finalBmi > 25){
             document.bmiForm.meaning.value = "That you have overweight."
+
             }
             }
             else{

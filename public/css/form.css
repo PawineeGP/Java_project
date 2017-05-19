@@ -506,3 +506,11 @@ border-radius:5px;
 -webkit-appearance:none;
 outline:none
 }
+
+.fbt{
+	background-color:#FFFFCC;
+	margin: 20px;
+	padding: inherit;
+	border-radius: 5px;
+
+}
